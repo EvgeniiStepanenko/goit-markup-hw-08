@@ -1,0 +1,113 @@
+.hero {
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url(../../images/herobg/hero-bg-mobile.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #c4c4c4;
+	text-align: center;
+	padding-top: 118px;
+	padding-bottom: 118px;
+	max-width: 100%;
+
+
+	@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+			background-image: url(../../images/herobg/hero-bg-mobile-x2.jpg);
+		}
+
+		@media screen and (min-width: 768px) {
+	
+			// max-width: 768px;
+
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+					url(../../images/herobg/hero-bg-tablet.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+
+			@media (min-device-pixel-ratio: 2),
+				(min-resolution: 192dpi),
+				(min-resolution: 2dppx) {
+					background-image: url(../../images/herobg/hero-bg-tablet-x2.jpg);
+				}
+	
+		}
+	
+		@media screen and (min-width: 1200px) {
+	
+			// max-width: 1200px;
+
+			padding-top: 180px;
+			padding-bottom: 180px;
+
+			background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+					url(../../images/herobg/hero-bg-desktop.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+
+			@media (min-device-pixel-ratio: 2),
+				(min-resolution: 192dpi),
+				(min-resolution: 2dppx) {
+				background-image: url(../../images/herobg/hero-bg-desktop-x2.jpg);
+				}
+	
+	
+		}
+}
+
+.hero__title {
+	width: 360px;
+	max-width: 100%;
+	margin: 0 auto 30px auto;
+
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 1.6153;
+
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--white-color);
+
+	@media  screen and (min-width: 768px) {
+
+		// width: 360px;
+		
+	}
+
+	@media screen and(min-width: 1200px) {
+		width: 696px;
+
+		font-size: 44px;
+		
+	}
+}
+
+.hero__button {
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.875;
+	padding: 10px 24px;
+	max-width: 100%;
+
+	letter-spacing: 0.06em;
+	cursor: pointer;
+	color: var(--white-color);
+	background-color: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-color: transparent;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover , 
+	&:focus {
+		background: #188ce8;
+
+	}
+
+	@media screen and(min-width: 1200px) {
+		padding: 10px 32px;
+		
+	}
+}
+
+
